@@ -122,9 +122,21 @@ body{
     transition: opacity .1s ease-in-out;
 }
 
+.package_details{
+    margin: 10px 15px;
+}
+
+.package_pricing{
+    padding-bottom: 7px;
+}
+
 .fade{
     opacity: 0;
     display: none;
+}
+
+.choices{
+    text-align: center;
 }
 
 .button{
