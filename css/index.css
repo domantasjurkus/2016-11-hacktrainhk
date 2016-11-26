@@ -1,3 +1,78 @@
-.highcharts-point {
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+.jumbotron {
+    background: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.container {
+    background: #eee;
+    padding: 0;
+}
+
+.nav-tabs {
+    background: #33393c;
+}
+
+h1, p, a {
+    color: #4DC9C9
+}
+
+.nav-tabs>li>a {
+    margin-right: 0;
+}
+
+.tab-content {
+    min-height: 500px;
+}
+
+.tab-pane {
+    padding: 30px;
+}
+
+.nav-tabs>li>a {
+    border-radius: 0;
+}
+
+.nav-tabs>li.active>a {
+    color: #007065 !important;
+}
+
+.btn {
+    bottom: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255) !important;
     cursor: pointer;
+    display: block;
+    height: 44px;
+    left: 0;
+    position: relative;
+    right: 0;
+    text-align: center;
+    text-size-adjust: 100%;
+    text-overflow: ellipsis;
+    top: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 729.213px 22px;
+    transform-origin: 729.213px 22px;
+    user-select: none;
+    /*background: rgba(24, 103, 194, 0.811765) none repeat scroll 0% 0% / auto padding-box border-box;*/
+    background: #009688;
+    border: 0px solid rgb(255, 255, 255);
+    font: normal normal 500 normal 17px / 36px -apple-system, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+    overflow: hidden;
+    padding: 4px 12px;
+    transition: none 0s ease 0s;
+    border-radius: 0;
+}
+
+.end-booking-btn, .reset-btn {
+    border-radius: 5px;
 }
