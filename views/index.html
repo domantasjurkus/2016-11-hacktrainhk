@@ -27,19 +27,110 @@
 <div class="jumbotron">
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="active"   role="presentation"><a href="#question01" aria-controls="question" role="tab" data-toggle="tab">Question 1</a></li>
+            <li class="active" role="presentation"><a href="#question00" aria-controls="question" role="tab" data-toggle="tab">Question 0</a></li>
+            <!--<li class="" role="presentation"><a href="#question01" aria-controls="question" role="tab" data-toggle="tab">Question 1</a></li>
             <li class="" role="presentation"><a href="#question02" aria-controls="question" role="tab" data-toggle="tab">Question 2</a></li>
-            <li class="" role="presentation"><a href="#question03" aria-controls="question" role="tab" data-toggle="tab">Question 3</a></li>
+            <li class="" role="presentation"><a href="#question03" aria-controls="question" role="tab" data-toggle="tab">Question 3</a></li>-->
 
             <li class="" role="presentation"><a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a></li>
             <li class="" role="presentation"><a href="#heatmap" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
-
             <li class="" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
             <li class="" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
         </ul>
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="question01">
-                <div class="container-fluid" style="text-align: center">
+            <div role="tabpanel" class="tab-pane fade in active" id="question00">
+                <div class="container-fluid">
+                    <div class="col-md-4" style="margin: auto;">
+                        <div class="qa01" style="text-align: center">
+                            <h3 class="q1">What would you like to do?</h3>
+                            <div class="row">
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                        <form class="form01" action="">
+                            <div class="form-group">
+                                <input type="checkbox" name="fancy-checkbox-default" id="stargaze-wrapper" autocomplete="off" />
+                                <div class="[ btn-group ]">
+                                    <label for="stargaze-wrapper" class="[ btn btn-default ]">
+                                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                                        <span> </span>
+                                    </label>
+                                    <label for="stargaze-wrapper" class="[ btn btn-default active ]">
+                                        Stargaze
+                                    </label>
+                                </div>
+
+                                <input type="checkbox" name="fancy-checkbox-primary" id="hike-wrapper" autocomplete="off" />
+                                <div class="[ btn-group ]">
+                                    <label for="hike-wrapper" class="[ btn btn-primary ]">
+                                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                                        <span> </span>
+                                    </label>
+                                    <label for="hike-wrapper" class="[ btn btn-default active ]">
+                                        Hike
+                                    </label>
+                                </div>
+
+                                <input type="checkbox" name="fancy-checkbox-primary" id="shop-wrapper" autocomplete="off" />
+                                <div class="[ btn-group ]">
+                                    <label for="shop-wrapper" class="[ btn btn-primary ]">
+                                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                                        <span> </span>
+                                    </label>
+                                    <label for="shop-wrapper" class="[ btn btn-default active ]">
+                                        Shop
+                                    </label>
+                                </div>
+
+                                <input type="checkbox" name="fancy-checkbox-primary" id="history-wrapper" autocomplete="off" />
+                                <div class="[ btn-group ]">
+                                    <label for="history-wrapper" class="[ btn btn-primary ]">
+                                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                                        <span> </span>
+                                    </label>
+                                    <label for="history-wrapper" class="[ btn btn-default active ]">
+                                        Historical sites
+                                    </label>
+                                </div>
+
+                                <input type="checkbox" name="fancy-checkbox-primary" id="boat-wrapper" autocomplete="off" />
+                                <div class="[ btn-group ]">
+                                    <label for="boat-wrapper" class="[ btn btn-primary ]">
+                                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                                        <span> </span>
+                                    </label>
+                                    <label for="boat-wrapper" class="[ btn btn-default active ]">
+                                        Boat excursion
+                                    </label>
+                                </div>
+
+                                <input type="checkbox" name="fancy-checkbox-primary" id="food-wrapper" autocomplete="off" />
+                                <div class="[ btn-group ]">
+                                    <label for="food-wrapper" class="[ btn btn-primary ]">
+                                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                                        <span> </span>
+                                    </label>
+                                    <label for="food-wrapper" class="[ btn btn-default active ]">
+                                        Local food
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <!--<input type="checkbox" id="hike" name="key" value="hike" checked>Hike<br>
+                            <input type="checkbox" id="shop" name="key" value="shop" checked>Shop<br>
+                            <input type="checkbox" id="historical" name="key" value="historical" checked>Visit historical sites<br>
+                            <input type="checkbox" id="boat" name="key" value="boat" checked>Take a boat excursion<br>
+                            <input type="checkbox" id="food" name="key" value="food" checked>Taste local food<br>-->
+                            <button class="btn btn-checkbox-submit skip" type="submit">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade in" id="question01">
+                <div class="container-fluid">
                     <div class="col-md-4" style="margin: auto; text-align: center;">
                         <div class="qa01">
                             <h3 class="q1">Do you wish to see the famous statue of Buddha?</h3>
@@ -92,7 +183,7 @@
                 </div>
             </div>
 
-            <div role="tabpanel" class="tab-pane fade" id="basic">
+            <!--<div role="tabpanel" class="tab-pane fade" id="basic">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
                         <div class="filters">
@@ -159,11 +250,167 @@
                         <hr>
                     </div>
                 </div>
-            </div>
+            </div>-->
+
             <div role="tabpanel" class="tab-pane fade" id="packages">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
-                        <div class="filters">                  
+                        <h5>Packages tailored for You</h5>
+
+                        <div class="package_container standard">
+                            <div class="package_summary row">
+                                <div class="col-xs-3 img_containeCrystal r">
+                                    <img src="../img/dummy.jpg" class="package_image">
+                                </div>
+                                <div class="col-xs-9 package_pricing">
+                                    <span class="package_header">Standard Package Name</span>
+                                    <hr>
+                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
+                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
+                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-xs-12 choices">
+                                <div class="button expand">More Details</div>
+                                <div class="button availability">Availability</div>
+                            </div>
+                            <div class="package_details row" style="display: none;">
+                                <p>Schedule</p>
+                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+
+                        <!--<div class="package_container crystal fade">
+                            <div class="package_summary choices row">
+                                <div class="col-xs-3 img_container">
+                                    <img src="../img/dummy.jpg" class="package_image">
+                                </div>
+                                <div class="col-xs-9 package_pricing">
+                                    <span class="package_header">Crystal Package Name</span>
+                                    <hr>
+                                    <i class="package_icon choices">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
+                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
+                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-xs-12 choices">
+                                <div class="button expand">More Details</div>
+                                <div class="button availability">Availability</div>
+                            </div>
+                            <div class="package_details row" style="display: none;">
+                                <p>Schedule</p>
+                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>-->
+
+                        <div class="package_container standard">
+                            <div class="package_summary row">
+                                <div class="col-xs-3 img_container">
+                                    <img src="../img/dummy.jpg" class="package_image">
+                                </div>
+                                <div class="col-xs-9 package_pricing">
+                                    <span class="package_header">Standard Package Name</span>
+                                    <hr>
+                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
+                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
+                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
+                                </div>
+                            </div>
+                            <div class="package_details row" style="display: none;">
+                                <p>Schedule</p>
+                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <br>
+                            <div class="col-xs-12 choices">
+                                <div class="button expand">More Details</div>
+                                <div class="button availability">Availability</div>
+                            </div>
+                        </div>
+
+                        <div class="package_container crystal fade">
+                            <div class="package_summary row">
+                                <div class="col-xs-3 img_container">
+                                    <img src="../img/dummy.jpg" class="package_image">
+                                </div>
+                                <div class="col-xs-9 package_pricing">
+                                    <span class="package_header">Crystal Package Name</span>
+                                    <hr>
+                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
+                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
+                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-xs-12 choices">
+                                <div class="button expand">More Details</div>
+                                <div class="button availability">Availability</div>
+                            </div>
+                            <div class="package_details row" style="display: none;">
+                                <p>Schedule</p>
+                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                        <div class="package_container standard">
+                            <div class="package_summary row">
+                                <div class="col-xs-3 img_container">
+                                    <img src="../img/dummy.jpg" class="package_image">
+                                </div>
+                                <div class="col-xs-9 package_pricing">
+                                    <span class="package_header">Standard Package Name</span>
+                                    <hr>
+                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
+                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
+                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
+                                </div>
+                            </div>
+                            <div class="package_details row" style="display: none;">
+                                <p>Schedule</p>
+                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <br>
+                            <div class="col-xs-12 choices">
+                                <div class="button expand">More Details</div>
+                                <div class="button availability">Availability</div>
+                            </div>
+                        </div>
+                        <div class="package_container crystal fade">
+                            <div class="package_summary row">
+                                <div class="col-xs-3 img_container">
+                                    <img src="../img/dummy.jpg" class="package_image">
+                                </div>
+                                <div class="col-xs-9 package_pricing">
+                                    <span class="package_header">Crystal Package Name</span>
+                                    <hr>
+                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
+                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
+                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
+                                </div>
+                                <div class="col-xs-12 choices">
+                                    <div class="button expand">More Details</div>
+                                    <div class="button availability">Availability</div>
+                                </div>
+                            </div>
+                            <div class="package_details row" style="display: none;">
+                                <p>Schedule</p>
+                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="filters">
                             <div class="row">
                                 <div class="col-xs-4 num_people">Adult:<input class="people" type="number" name="adult"></div>
                                 <div class="col-xs-4 num_people">Child:<input class="people" type="number" name="child"></div>
@@ -177,152 +424,6 @@
                             <div class="row">
                                 <div class="col-xs-4 num_people">Date</div>
                                 <div class="col-xs-4 num_people"><input class="date" type="date" name="date"></div>
-                            </div>
-                        </div>
-                        <hr>
-                        <h5>Packages</h5>
-                        <div class="package_container standard">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_containeCrystal r">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Standard Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
-                                </div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="package_container crystal fade">
-                            <div class="package_summary choices row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Crystal Package Name</span>
-                                    <hr>
-                                    <i class="package_icon choices">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
-                                </div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="package_container standard">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Standard Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
-                                </div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="package_container crystal fade">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Crystal Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
-                                </div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="package_container standard">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Standard Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
-                                </div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="package_container crystal fade">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Crystal Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
-                                </div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
                     </div>

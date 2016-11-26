@@ -47,7 +47,7 @@ h1, p, a {
 .btn {
     bottom: 0;
     box-sizing: border-box;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     display: inline;
     height: 44px;
@@ -77,4 +77,36 @@ h1, p, a {
 
 .end-booking-btn, .reset-btn {
     border-radius: 5px;
+}
+
+
+
+.btn-group {
+    margin: 5px;
+}
+
+.form-group {
+    color: gray;
+}
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;
 }
