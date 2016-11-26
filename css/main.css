@@ -98,9 +98,50 @@ body{
     font-family: 'Roboto';
 }
 
+h5{
+    font-size: 21px;
+    color: #49c8e8;
+}
+
+#home{
+    background: hsla(0,0%,99%,1);
+}
+
 .people{
-    width: 40px;
+    width: 66%;
     margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.num_people{
+    font-size: 15px;
+    font-family: 'Raleway';
+    padding-right: 0;
+    margin-bottom: 9px;
+}
+
+.jumbotron{
+    padding-top: 0 !important;
+}
+
+.filters{
+    background: #1ba88f;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.date{
+    border: none;
+    border-radius: 5px;
+}
+
+.package_header{
+    color: #4f4f4f;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .package_image{
@@ -110,6 +151,7 @@ body{
 
 .package_container{
     padding: 10px 15px;
+    background-color: white;
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
@@ -127,6 +169,15 @@ body{
 
 .package_pricing{
     padding-bottom: 7px;
+}
+
+.package_details p{
+    color: #2a2a2a;
+    font-size: 14px;
+}
+
+.package_icon{
+    font-weight: 700;
 }
 
 .fade{
@@ -158,6 +209,11 @@ body{
 .expand{
     margin-right: 5px;
     background: #2dbfef;
+    color: white;
+}
+
+.availability{
+    background: #90c863;
     color: white;
 }
 
