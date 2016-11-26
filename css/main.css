@@ -43,7 +43,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 6px 0;
     padding: 0;
 }
 
@@ -110,11 +110,10 @@ body{
 
 .package_container{
     padding: 10px 15px;
-    border: 1px solid grey;
-    border-radius: 5px;
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
+    box-shadow: 0px 1px 5px #cadce1;
     -webkit-transition: opacity .1s ease-in-out;
     -moz-transition: opacity .1s ease-in-out;
     -ms-transition: opacity .1s ease-in-out;
@@ -141,18 +140,29 @@ body{
 
 .button{
     padding: 7px 10px;
-    border: 1px solid grey;
     width: 46%;
     text-align: center;
     display: inline-block;
+    border-radius: 5px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.body{
+    background-color: hsla(0,0%,98%,1);
 }
 
 .expand{
     margin-right: 5px;
+    background: #2dbfef;
+    color: white;
 }
 
 .img_container{
-    padding-right: none !important;
+    padding-right: 0 !important;
 }
 /* ==========================================================================
    Helper classes
