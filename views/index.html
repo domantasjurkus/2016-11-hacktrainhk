@@ -1,28 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Marvin</title>
-<meta charset="utf-8"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="mobile-web-app-capable" content="yes"/>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,500,700,700italic,500italic'
-      rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/index.css">
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="/js/lib/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/lib/highcharts.js"></script>
-    <script src="/js/lib/heatmap.js"></script>
-    <script src="/js/lib/exporting.js"></script>
-</head>
-<body>
-<div class="jumbotron" style="background: white">
-    <div class="container">
-        <div id="highcharts-container" style="height: 400px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
-    </div>
-</div>
-<script src="/js/index.js"></script>
-</body>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="col-md-4" style="border: 1px solid black; margin: auto;">
+                <div class="row">
+                    <div class="col-xs-4">Adult:<input class="people" type="number" name="adult"></div>
+                    <div class="col-xs-4">Child:<input class="people" type="number" name="child"></div>
+                    <div class="col-xs-4">Senior:<input class="people" type="number" name="senior"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">Cabin Type:&nbsp;</div>
+                    <div class="col-xs-4"><input type="radio" name="cabin" value="standard" checked>Standard</div>
+                    <div class="col-xs-4"><input type="radio" name="cabin" value="crystal fade">Crystal</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">Date</div>
+                    <div class="col-xs-4"><input type="date" name="date"></div>
+                </div>
+                <hr>
+                <h5>Basic</h5>
+                <div class="package_container standard">
+                    <div class="package_summary">
+                        <div class="col-xs-3 img_container">
+                            <img src="../img/dummy.jpg" class="package_image">
+                        </div>
+                        <div class="col-xs-9">
+                            <span class="package_header">Package Name</span>
+                            <hr>
+                            <i class="package_icon">Adult:</i>&nbsp;HK$400<br>
+                            <i class="package_icon">Child:</i>&nbsp;HK$300<br>
+                            <i class="package_icon">Senior:</i>&nbsp;HK$200
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="button expand">More Details</div>
+                            <div class="button expand">Check Availability</div>
+                        </div>
+                    </div>
+                    <div class="package_details" style="display: none;">
+                        <p>Schedule</p>
+                        <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                        <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="package_container crystal fade">
+                    <div class="package_summary row">
+                        <div class="col-xs-3 img_container">
+                            <img src="../img/dummy.jpg" class="package_image">
+                        </div>
+                        <div class="col-xs-9">
+                            <span class="package_header">Package Name</span>
+                            <hr>
+                            <i class="package_icon">Adult:</i>&nbsp;HK$400<br>
+                            <i class="package_icon">Child:</i>&nbsp;HK$300<br>
+                            <i class="package_icon">Senior:</i>&nbsp;HK$200
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="button expand">More Details</div>
+                            <div class="button expand">Check Availability</div>
+                        </div>
+                    </div>
+                    <div class="package_details row" style="display: none;">
+                        <p>Schedule</p>
+                        <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                        <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <hr>
+                <h5>Packages</h5>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            jQuery(function(){
+                $('input[name="cabin"]').change(function(){
+                    $('.crystal').toggleClass('fade');
+                    $('.standard').toggleClass('fade');
+                });
+
+                $('.expand').click(function(){
+                    $(this).parent().parent().next().slideToggle("fast");
+                    $('#show-background').text(text == "More Details" ? "Hide Details" : "More Details");
+                })
+            })
+        </script>
+    </body>
 </html>
