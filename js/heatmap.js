@@ -11,7 +11,7 @@ function drawHeatmap(data) {
             marginTop: 0,
             marginBottom: 30,
             marginRight: 0,
-            width: ((window.innerWidth > 0) ? window.innerWidth : screen.width)*0.8,
+            width: ((window.innerWidth > 0) ? window.innerWidth : screen.width)*0.7,
             height: 500,
             plotBorderWidth: 0,
             style: {
@@ -45,8 +45,8 @@ function drawHeatmap(data) {
 
         colorAxis: {
             min: 0,
-            minColor: '#eeeeee',
-            maxColor: '#2828c6'
+            minColor: '#66BB6A',
+            maxColor: '#666'
         },
         tooltip: {
             animation: false,

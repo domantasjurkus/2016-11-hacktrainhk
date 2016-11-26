@@ -4,13 +4,15 @@ body {
 }
 
 .jumbotron {
-    background: white;
+    background: #eee;
     margin-bottom: 0;
     padding-bottom: 0;
+    min-height: 1000px;
+    height: 100%;
 }
 
 .container {
-    background: #eee;
+    background: #fff;
     padding: 0;
 }
 
@@ -27,7 +29,7 @@ h1, p, a {
 }
 
 .tab-content {
-    min-height: 500px;
+    min-height: 600px;
 }
 
 .tab-pane {
