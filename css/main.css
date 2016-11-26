@@ -186,6 +186,10 @@ h5{
     display: none;
 }
 
+.hidden{
+    display: none;
+}
+
 .choices{
     text-align: center;
 }
@@ -209,6 +213,11 @@ h5{
 
 .expand{
     margin-right: 5px;
+    background: #2dbfef;
+    color: white;
+}
+
+.next{
     background: #2dbfef;
     color: white;
 }

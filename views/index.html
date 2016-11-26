@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,500,700,700italic,500italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="/css/lib/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/index.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -26,21 +27,79 @@
 <div class="jumbotron">
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="active"   role="presentation"><a href="#basic" aria-controls="home" role="tab" data-toggle="tab">Basic</a></li>
-            <li class="disabled" role="presentation"><a href="#packages" aria-controls="home" role="tab" data-toggle="tab">Packages</a></li>
-            <li class="disabled" role="presentation"><a href="#first" id="end-tab" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
-            <li class="disabled" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
-            <li class="disabled" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
+            <li class="active"   role="presentation"><a href="#question01" aria-controls="question" role="tab" data-toggle="tab">Question 1</a></li>
+            <li class="" role="presentation"><a href="#question02" aria-controls="question" role="tab" data-toggle="tab">Question 2</a></li>
+            <li class="" role="presentation"><a href="#question03" aria-controls="question" role="tab" data-toggle="tab">Question 3</a></li>
+
+            <li class="" role="presentation"><a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a></li>
+            <li class="" role="presentation"><a href="#heatmap" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
+
+            <li class="" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
+            <li class="" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
         </ul>
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="basic">
+            <div role="tabpanel" class="tab-pane fade in active" id="question01">
+                <div class="container-fluid" style="text-align: center">
+                    <div class="col-md-4" style="margin: auto; text-align: center;">
+                        <div class="qa01">
+                            <h3 class="q1">Do you wish to see the famous statue of Buddha?</h3>
+                            <div class="row">
+                                <img src="/img/buddha.jpg">
+                                <br/>
+                                <br/>
+                                <button class="btn btn-01 yes">Yes</button>
+                                <button class="btn btn-01 no">No</button>
+                                <button class="btn btn-01 skip">Skip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade in" id="question02">
+                <div class="container-fluid" style="padding-top: 10px;">
+                    <div class="col-md-4" style="margin: auto; text-align: center;">
+                        <div class="qa02">
+                            <h3 class="q2">Do you want an adventurous time? (exploring the local attractions)</h3>
+                            <img src="/img/village.jpg">
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <button class="btn btn-02 yes">Yes</button>
+                                <button class="btn btn-02 no">No</button>
+                                <button class="btn btn-02 skip">Skip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade in" id="question03">
+                <div class="container-fluid" style="padding-top: 10px;">
+                    <div class="col-md-4" style="margin: auto; text-align: center;">
+                        <div class="qa03">
+                            <h3 class="q3">Are you interested in the least expensive package?</h3>
+                            <div class="row">
+                                <img src="/img/car.jpg">
+                                <br/>
+                                <br/>
+                                <button class="btn btn-03 yes">Yes</button>
+                                <button class="btn btn-03 no">No</button>
+                                <button class="btn btn-03 skip">Skip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="basic">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
-                        <div class="filters">                  
+                        <div class="filters">
                             <div class="row">
                                 <div class="col-xs-4 num_people">Adult:<input class="people" type="number" name="adult"></div>
                                 <div class="col-xs-4 num_people">Child:<input class="people" type="number" name="child"></div>
-                                <div class="col-xs-4 num_people">Senior:<input class="people" type=" num_peoplenumber" name="senior"></div>
+                                <div class="col-xs-4 num_people">Senior:<input class="people" type="num_peoplenumber" name="senior"></div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-4 num_people">Date</div>
@@ -100,11 +159,8 @@
                         <hr>
                     </div>
                 </div>
-                <button class="btn end-booking-btn">End Bookings and Allocate Seats</button>
-                <br>
-                <button class="btn reset-btn">Reset Bookings</button>
             </div>
-            <div role="tabpanel" class="tab-pane fade in active" id="packages">
+            <div role="tabpanel" class="tab-pane fade" id="packages">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
                         <div class="filters">                  
@@ -271,11 +327,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn end-booking-btn">End Bookings and Allocate Seats</button>
-                <br>
-                <button class="btn reset-btn">Reset Bookings</button>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="first">
+            <div role="tabpanel" class="tab-pane fade" id="heatmap">
                 <div id="highcharts-container" style="height: 400px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="second"><canvas id="second-chart"></canvas></div>
@@ -285,17 +338,6 @@
 </div>
 
 <script src="/js/heatmap.js"></script>
-<script>
-    jQuery(function(){
-        $('input[name="cabin"]').change(function(){
-            $('.crystal').toggleClass('fade');
-            $('.standard').toggleClass('fade');
-        });
-
-        $('.expand').click(function(){
-            $(this).parent().parent().next().slideToggle("fast");
-        })
-    })
-</script>
+<script src="/js/index.js"></script>
 </body>
 </html>
