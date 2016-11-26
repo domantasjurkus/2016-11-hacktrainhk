@@ -26,9 +26,9 @@
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
             <li class="active"   role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Plan Visit</a></li>
-            <li class="disabled" role="presentation"><a href="#first" id="end-tab" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
-            <li class="disabled" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
-            <li class="disabled" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
+            <li class="" role="presentation"><a href="#first" id="end-tab" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
+            <li class="" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
+            <li class="" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
         </ul>
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="home">
@@ -250,7 +250,9 @@
                 <br>
                 <button class="btn reset-btn">Reset Bookings</button>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="first"><canvas id="first-chart"></canvas></div>
+            <div role="tabpanel" class="tab-pane fade" id="first">
+                <div id="highcharts-container" style="height: 400px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
+            </div>
             <div role="tabpanel" class="tab-pane fade" id="second"><canvas id="second-chart"></canvas></div>
             <div role="tabpanel" class="tab-pane fade" id="third"><canvas id="third-chart"></canvas></div>
         </div>
@@ -258,7 +260,6 @@
 </div>
 
 <script src="/js/heatmap.js"></script>
-<!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
 <script>
     jQuery(function(){
         $('input[name="cabin"]').change(function(){
@@ -268,7 +269,6 @@
 
         $('.expand').click(function(){
             $(this).parent().parent().next().slideToggle("fast");
-            $('#show-background').text(text == "More Details" ? "Hide Details" : "More Details");
         })
     })
 </script>
