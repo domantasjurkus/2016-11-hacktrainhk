@@ -26,14 +26,40 @@
 <div class="jumbotron">
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="active"   role="presentation"><a href="#basic" aria-controls="home" role="tab" data-toggle="tab">Basic</a></li>
-            <li class="disabled" role="presentation"><a href="#packages" aria-controls="home" role="tab" data-toggle="tab">Packages</a></li>
+            <li class="active"   role="presentation"><a href="#question" aria-controls="question" role="tab" data-toggle="tab">Questions</a></li>
+            <li class="disabled" role="presentation"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Basic</a></li>
+            <li class="disabled" role="presentation"><a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a></li>
             <li class="disabled" role="presentation"><a href="#first" id="end-tab" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
             <li class="disabled" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
             <li class="disabled" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
         </ul>
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="basic">
+            <div role="tabpanel" class="tab-pane fade in active" id="question">
+                <div class="container-fluid" style="padding-top: 10px;">
+                    <div class="col-md-4" style="margin: auto; text-align: center;">
+                        <div class="q_a">
+                            <h3 class="q1">I just want to ride the cable cars.</h3>
+                            <div class="row">
+                                <div class="yes choice">Yes</div>
+                                <div class="no choice">No</div>
+                            </div>
+                            <div id="" class="next button">Next</div>
+                        </div>
+                        <div class="q_a">
+                            <h3 class="q2">I want to see what else you have to offer</h3>
+                            <div class="row">
+                                <div class="yes choice">Certainly.</div>
+                                <div class="no choice">No thanks.</div>
+                            </div>
+                            <div class="next button">Next</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn end-booking-btn">End Bookings and Allocate Seats</button>
+                <br>
+                <button class="btn reset-btn">Reset Bookings</button>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="basic">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
                         <div class="filters">                  
@@ -104,7 +130,7 @@
                 <br>
                 <button class="btn reset-btn">Reset Bookings</button>
             </div>
-            <div role="tabpanel" class="tab-pane fade in active" id="packages">
+            <div role="tabpanel" class="tab-pane fade" id="packages">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
                         <div class="filters">                  
@@ -275,7 +301,6 @@
                 <br>
                 <button class="btn reset-btn">Reset Bookings</button>
             </div>
-            
             <div role="tabpanel" class="tab-pane fade" id="first"><canvas id="first-chart"></canvas></div>
             <div role="tabpanel" class="tab-pane fade" id="second"><canvas id="second-chart"></canvas></div>
             <div role="tabpanel" class="tab-pane fade" id="third"><canvas id="third-chart"></canvas></div>
@@ -293,9 +318,15 @@
         });
 
         $('.expand').click(function(){
+            var text = $(this).text();
             $(this).parent().parent().next().slideToggle("fast");
-            $('#show-background').text(text == "More Details" ? "Hide Details" : "More Details");
+            $(this).text(text == "More Details" ? "Hide Details" : "More Details");
         })
+
+        // $(".next").click(function(){
+        //     $(this).parent().fadeToggle("fast");
+        //     $(this).parent().next().fadeToggle("fast");
+        // })
     })
 </script>
 </body>
