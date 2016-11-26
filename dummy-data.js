@@ -1,0 +1,58 @@
+// Dummy week data for testing
+module.exports = [
+    [0,0,Math.floor(Math.random()*45)],
+    [0,1,Math.floor(Math.random()*80)],
+    [0,2,30+Math.floor(Math.random()*110)],
+    [0,3,30+Math.floor(Math.random()*120)],
+    [0,4,30+Math.floor(Math.random()*120)],
+    [0,5,Math.floor(Math.random()*60)],
+    [0,6,Math.floor(Math.random()*45)],
+
+    [1,0,Math.floor(Math.random()*45)],
+    [1,1,Math.floor(Math.random()*80)],
+    [1,2,30+Math.floor(Math.random()*110)],
+    [1,3,30+Math.floor(Math.random()*120)],
+    [1,4,30+Math.floor(Math.random()*120)],
+    [1,5,Math.floor(Math.random()*60)],
+    [1,6,Math.floor(Math.random()*45)],
+
+    [2,0,Math.floor(Math.random()*45)],
+    [2,1,Math.floor(Math.random()*80)],
+    [2,2,30+Math.floor(Math.random()*110)],
+    [2,3,30+Math.floor(Math.random()*110)],
+    [2,4,30+Math.floor(Math.random()*120)],
+    [2,5,Math.floor(Math.random()*60)],
+    [2,6,Math.floor(Math.random()*45)],
+
+    [3,0,Math.floor(Math.random()*45)],
+    [3,1,Math.floor(Math.random()*80)],
+    [3,2,30+Math.floor(Math.random()*110)],
+    [3,3,30+Math.floor(Math.random()*110)],
+    [3,4,30+Math.floor(Math.random()*120)],
+    [3,5,Math.floor(Math.random()*60)],
+    [3,6,Math.floor(Math.random()*45)],
+
+    [4,0,Math.floor(Math.random()*45)],
+    [4,1,Math.floor(Math.random()*80)],
+    [4,2,30+Math.floor(Math.random()*110)],
+    [4,3,30+Math.floor(Math.random()*110)],
+    [4,4,30+Math.floor(Math.random()*120)],
+    [4,5,Math.floor(Math.random()*60)],
+    [4,6,Math.floor(Math.random()*45)],
+
+    [5,0,Math.floor(Math.random()*45)],
+    [5,1,Math.floor(Math.random()*80)],
+    [5,2,30+Math.floor(Math.random()*110)],
+    [5,3,30+Math.floor(Math.random()*120)],
+    [5,4,30+Math.floor(Math.random()*120)],
+    [5,5,Math.floor(Math.random()*60)],
+    [5,6,Math.floor(Math.random()*45)],
+
+    [6,0,Math.floor(Math.random()*45)],
+    [6,1,Math.floor(Math.random()*80)],
+    [6,2,30+Math.floor(Math.random()*110)],
+    [6,3,30+Math.floor(Math.random()*120)],
+    [6,4,30+Math.floor(Math.random()*120)],
+    [6,5,Math.floor(Math.random()*60)],
+    [6,6,Math.floor(Math.random()*45)]
+];
