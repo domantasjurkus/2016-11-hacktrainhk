@@ -35,8 +35,8 @@
 
             <li class="" role="presentation"><a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a></li>
             <li class="" role="presentation"><a href="#heatmap" aria-controls="" role="tab" data-toggle="tab">Select Time</a></li>
-            <li class="" role="presentation"><a href="#second" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
-            <li class="" role="presentation"><a href="#third" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
+            <li class="" role="presentation"><a href="#payment" aria-controls="" role="tab" data-toggle="tab">Payment Method</a></li>
+            <li class="" role="presentation"><a href="#done" aria-controls="" role="tab" data-toggle="tab">Done</a></li>
         </ul>
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="question00">
@@ -118,19 +118,13 @@
                                 </div>
 
                             </div>
-
-                            <!--<input type="checkbox" id="hike" name="key" value="hike" checked>Hike<br>
-                            <input type="checkbox" id="shop" name="key" value="shop" checked>Shop<br>
-                            <input type="checkbox" id="historical" name="key" value="historical" checked>Visit historical sites<br>
-                            <input type="checkbox" id="boat" name="key" value="boat" checked>Take a boat excursion<br>
-                            <input type="checkbox" id="food" name="key" value="food" checked>Taste local food<br>-->
                             <button class="btn btn-checkbox-submit skip" type="submit">Next</button>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <!--<div role="tabpanel" class="tab-pane fade in" id="question01">
+            <div role="tabpanel" class="tab-pane fade in" id="question01">
                 <div class="container-fluid">
                     <div class="col-md-4" style="margin: auto; text-align: center;">
                         <div class="qa01">
@@ -182,12 +176,12 @@
                         </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
             <div role="tabpanel" class="tab-pane fade" id="packages">
                 <div class="container-fluid" style="padding-top: 10px;">
                     <div class="col-md-4" style="margin: auto;">
-                        <h5>Packages tailored for You</h5>
+                        <h5>Packages Tailored for You</h5>
 
                         <div class="package_container standard">
                             <div class="package_summary row">
@@ -207,7 +201,7 @@
                                 <button class="btn" data-toggle="collapse" data-target="#desc01">More Details</button>
                                 <div class="button availability">Availability</div>
                             </div>
-                            <div id="blablabla" class="collapse">
+                            <div class="collapse">
                                 <div class="package_details row" style="display: none;">
                                     <p>Schedule</p>
                                     <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
@@ -219,7 +213,6 @@
                             <div id="desc01" class="collapse">
                                 Tour fee includes single-trip cable car ticket from Tung Chung to Ngong Ping, air-conditioned sightseeing coach transfer to Tai O Fishing Village, Tai O boat excursion, Traditional stilt house visitation, free tasting of Tai O local gourmets , guided services and one-way ferry ticket from Tai O to Tung Chung.
                             </div>
-
                         </div>
 
                         <div class="package_container standard">
@@ -237,46 +230,32 @@
                             </div>
                             <br>
                             <div class="col-xs-12 choices">
-                                <div class="button expand">More Details</div>
+                                <button class="btn" data-toggle="collapse" data-target="#desc02">More Details</button>
                                 <div class="button availability">Availability</div>
                             </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Includes: Ngong Ping Village, Po Lin Monastery, Big Buddha, Tai O Fishing Village with boat excursion, Ngong Ping Piazza</p>
+                            <div class="collapse">
+                                <div class="package_details row" style="display: none;">
+                                    <p>Schedule</p>
+                                    <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                    <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
+                                </div>
+                            </div>
+
+                            <button style="visibility: hidden">Collapsible</button>
+                            <div id="desc02" class="collapse">
+
+                                Includes: Ngong Ping Village, Po Lin Monastery, Big Buddha, Tai O Fishing Village with boat excursion, Ngong Ping Piazza
+                                Book Now
                             </div>
                         </div>
 
-                        <div class="package_container crystal fade">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Crystal Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                            </div>
-                            <br>
-                            <div class="col-xs-12 choices">
-                                <div class="button expand">More Details</div>
-                                <div class="button availability">Availability</div>
-                            </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
                         <div class="package_container standard">
                             <div class="package_summary row">
                                 <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
+                                    <img src="../img/car.jpg" class="package_image">
                                 </div>
                                 <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Ngong Ping Cable Car Experience</span>
+                                    <span class="package_header">Base Cable Car Experience</span>
                                     <hr>
                                     <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
                                     <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
@@ -291,36 +270,24 @@
                             </div>
                             <br>
                             <div class="col-xs-12 choices">
-                                <div class="button expand">More Details</div>
+                                <button class="btn" data-toggle="collapse" data-target="#desc03">More Details</button>
                                 <div class="button availability">Availability</div>
                             </div>
-                        </div>
-                        <div class="package_container crystal fade">
-                            <div class="package_summary row">
-                                <div class="col-xs-3 img_container">
-                                    <img src="../img/dummy.jpg" class="package_image">
-                                </div>
-                                <div class="col-xs-9 package_pricing">
-                                    <span class="package_header">Crystal Package Name</span>
-                                    <hr>
-                                    <i class="package_icon">Adult:</i>&nbsp;&nbsp;&nbsp;HK$400<br>
-                                    <i class="package_icon">Child:</i>&nbsp;&nbsp;&nbsp;HK$300<br>
-                                    <i class="package_icon">Senior:</i>&nbsp;&nbsp;&nbsp;HK$200
-                                </div>
-                                <div class="col-xs-12 choices">
-                                    <div class="button expand">More Details</div>
-                                    <div class="button availability">Availability</div>
+                            <div class="collapse">
+                                <div class="package_details row" style="display: none;">
+                                    <p>Schedule</p>
+                                    <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
+                                    <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
                                 </div>
                             </div>
-                            <div class="package_details row" style="display: none;">
-                                <p>Schedule</p>
-                                <p><strong>Weekdays:</strong> 11:00 - 17:00</p>
-                                <p><strong>Weekends and Holidays:</strong> 10:00 - 15:30</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                            <button style="visibility: hidden">Collapsible</button>
+                            <div id="desc03" class="collapse">
+                                A standard ticket including a return journey with the cable car.
                             </div>
                         </div>
-                        <hr>
-                        <div class="filters">
+
+                        <!--<div class="filters">
                             <div class="row">
                                 <div class="col-xs-4 num_people">Adult:<input class="people" type="number" name="adult"></div>
                                 <div class="col-xs-4 num_people">Child:<input class="people" type="number" name="child"></div>
@@ -335,7 +302,7 @@
                                 <div class="col-xs-4 num_people">Date</div>
                                 <div class="col-xs-4 num_people"><input class="date" type="date" name="date"></div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -344,7 +311,7 @@
             </div>
 
             <!-- Payment Screen -->
-            <div role="tabpanel" class="tab-pane fade" id="second">
+            <div role="tabpanel" class="tab-pane fade" id="payment">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-4">

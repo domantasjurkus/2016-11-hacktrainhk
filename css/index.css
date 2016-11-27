@@ -110,3 +110,7 @@ h1, p, a {
 .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
     display: none;
 }
+
+.highcharts-point {
+    cursor: pointer;
+}
