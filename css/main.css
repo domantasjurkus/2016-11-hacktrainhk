@@ -195,7 +195,7 @@ h5{
 }
 
 .button{
-    padding: 7px 10px;
+    padding: 12px 10px;
     width: 46%;
     text-align: center;
     display: inline-block;
@@ -205,6 +205,7 @@ h5{
     -ms-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
+    cursor: pointer;
 }
 
 .body{
