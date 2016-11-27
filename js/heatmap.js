@@ -83,10 +83,9 @@ $(function () {
             marginTop: 5,
             marginBottom: 25,
             plotBorderWidth: 0,
-            style: "{fontSize: '20px'}",
             style: {
-                fontFamily: "Poppins"
-            },
+                fontFamily: "Roboto"
+            }
         },
         exporting: {
             enabled: false
