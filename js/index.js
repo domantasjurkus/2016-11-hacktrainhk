@@ -41,4 +41,8 @@ jQuery(function(){
         $('.nav-tabs a[href="#payment"]').tab('show');
     });
 
+    $(".btn-book").click(function () {
+        $('.nav-tabs a[href="#done"]').tab('show');
+    });
+
 });

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Roboto', 'Consolas', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 .jumbotron {
@@ -113,4 +113,10 @@ h1, p, a {
 
 .highcharts-point {
     cursor: pointer;
+}
+
+h5.booking-info {
+    color: black;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 14px;
 }
